@@ -1,3 +1,7 @@
+package aoc2021.solution
+
+import util.readInput
+
 class Day03 {
     private fun part1(input: List<String>): Int {
         val frequentBitMap = List(input[0].length) { idx ->
@@ -53,7 +57,7 @@ class Day03 {
     }
 
     fun main() {
-        val input = readInput("Day03")
+        val input = readInput("2021_03")
         println("Part 1 : ${part1(input)}")
         println("Part 2 : ${part2(input)}")
     }

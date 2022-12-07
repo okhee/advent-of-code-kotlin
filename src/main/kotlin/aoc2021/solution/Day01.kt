@@ -1,3 +1,7 @@
+package aoc2021.solution
+
+import util.readInput
+
 class Day01 {
     private fun part1(input: List<String>): Int {
         return countDepthIncrease(input.map {it.toInt()}.toList())
@@ -28,7 +32,7 @@ class Day01 {
     }
 
     fun main() {
-        val input = readInput("Day01")
+        val input = readInput("2021_01")
         println("Part 1 : ${part1(input)}")
         println("Part 2 : ${part2(input)}")
     }

@@ -1,3 +1,7 @@
+package aoc2021.solution
+
+import util.readInput
+
 class Day02 {
     private class Command (val direction: String, val amount: Int)
 
@@ -33,7 +37,7 @@ class Day02 {
     }
 
     fun main() {
-        val input = readInput("Day02")
+        val input = readInput("2021_02")
         println("Part 1 : ${part1(input)}")
         println("Part 2 : ${part2(input)}")
     }
